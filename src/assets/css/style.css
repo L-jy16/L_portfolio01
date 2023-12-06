@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* setting */
+@import "./setting/fonts.css";
+@import "./setting/vars.css";
+@import "./setting/reset.css";
+@import "./setting/commons.css";
+
+/* section */
+@import "./section/header.css";
+@import "./section/mian.css";
+@import "./section/info.css";
+@import "./section/work.css";
+@import "./section/script.css";
+@import "./section/footer.css";
