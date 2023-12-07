@@ -32,7 +32,7 @@
 .aboutme_En {
   width: 75%;
   font-weight: 400;
-  font-size: 4.9vw;
+  font-size: 5.3rem;
   word-break: keep-all;
   padding-right: 2vw;
   padding-bottom: 2vw;
@@ -64,7 +64,7 @@
   word-break: keep-all;
   padding-left: 2vw;
   padding-bottom: 2vw;
-  font-size: 1vw;
+  font-size: 1.2rem;
   line-height: 1.5;
 }
 
@@ -97,7 +97,7 @@
 .skill_info {
   width: 25%;
   padding-top: 2.5vw;
-  font-size: 1.3vw;
+  font-size: 2rem;
   font-weight: 400;
   position: relative;
   overflow: hidden;
@@ -182,16 +182,154 @@
 }
 
 .skill_name {
-  font-size: 1.8vw;
+  font-size: 2.4rem;
   text-transform: uppercase;
   margin-bottom: 1vw;
   font-weight: 400;
 }
 
 .skill_cont {
-  font-size: 1.18vw;
+  font-size: 1.45rem;
   font-weight: 400;
 }
+
+@media (max-width: 1900px) {
+  .aboutme_En {
+    font-size: 5.1rem;
+  }
+
+}
+
+@media (max-width: 1800px) {
+  .aboutme_En {
+    font-size: 4.9rem;
+  }
+
+}
+
+@media (max-width: 1700px) {
+  .aboutme_En {
+    font-size: 4.6rem;
+  }
+  .aboutme_ko {
+    font-size: 0.9rem;
+  }
+  
+  .skill_info {
+    font-size: 1.7rem;
+  }
+  
+  .skill_name {
+    font-size: 1.9rem;
+ }
+  
+  .skill_cont {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .aboutme_En {
+    font-size: 4rem;
+  }
+  .aboutme_ko {
+    font-size: 0.8rem;
+  }
+  
+  .skill_info {
+    font-size: 1.5rem;
+  }
+  
+  .skill_name {
+    font-size: 1.7rem;
+ }
+  
+  .skill_cont {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .aboutme_En {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .aboutme_En {
+    font-size: 3.2rem;
+  }
+  .aboutme_ko {
+    font-size: 0.7rem;
+  }
+  
+  .skill_info {
+    font-size: 1.4rem;
+  }
+  
+  .skill_name {
+    font-size: 1.5rem;
+ }
+  
+  .skill_cont {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1130px) {
+  .aboutme_En {
+    font-size: 3rem;
+  }
+  .aboutme_ko {
+    font-size: 0.6rem;
+  }
+  
+  .skill_info {
+    font-size: 1.3rem;
+  }
+  
+  .skill_name {
+    font-size: 1.3rem;
+ }
+  
+  .skill_cont {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .aboutme_En {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .aboutme_En {
+    font-size: 2.4rem;
+  }
+  .aboutme_ko {
+    font-size: 0.5rem;
+  }
+  
+  .skill_info {
+    font-size: 1.2rem;
+  }
+  
+  .skill_name {
+    font-size: 1.2rem;
+ }
+  
+  .skill_cont {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .aboutme_En {
+    font-size: 2.2rem;
+  }
+}
+
 
 @media (max-width: 800px) {
   .aboutMe::before {
@@ -201,7 +339,7 @@
   .aboutme_En {
     width: 100%;
     border-right: none;
-    font-size: 6vw;
+    font-size: 3.3rem;
   }
 
   .aboutme_En::before {
@@ -224,7 +362,7 @@
 
   .aboutme_ko {
     width: 100%;
-    font-size: 3vw;
+    font-size: 1.7rem;
     padding: 2vw 0;
     position: relative;
     overflow: hidden;
@@ -250,7 +388,7 @@
   .skill_info {
     width: 100%;
     border: none;
-    font-size: 5vw;
+    font-size: 2.8rem;
     padding: 2vw 0;
     font-weight: 700;
   }
@@ -295,11 +433,102 @@
   }
 
   .skill_name {
-    font-size: 4vw;
+    font-size: 2.2rem;
     font-weight: 700;
   }
 
   .skill_cont {
-    font-size: 3vw;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .aboutme_En {
+    font-size: 3.1rem;
+  }
+  .aboutme_ko {
+    font-size: 1.5rem;
+  }
+  
+  .skill_info {
+    font-size: 2.6rem;
+  }
+  
+  .skill_name {
+    font-size: 2rem;
+ }
+  
+  .skill_cont {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 710px) {
+  .aboutme_En {
+    font-size: 2.9rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .aboutme_En {
+    font-size: 2.4rem;
+  }
+  .aboutme_ko {
+    font-size: 1.3rem;
+  }
+  
+  .skill_info {
+    font-size: 2.4rem;
+  }
+  
+  .skill_name {
+    font-size: 1.8rem;
+ }
+  
+  .skill_cont {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 560px) {
+  .aboutme_En {
+    font-size: 2rem;
+  }
+  .aboutme_ko {
+    font-size: 1rem;
+  }
+  
+  .skill_info {
+    font-size: 2rem;
+  }
+  
+  .skill_name {
+    font-size: 1.6rem;
+ }
+  
+  .skill_cont {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .aboutme_En {
+    font-size: 1.8rem;
+  }
+  .aboutme_ko {
+    font-size: 0.8rem;
+  }
+  
+  .skill_info {
+    font-size: 1.8rem;
+  }
+  
+  .skill_name {
+    font-size: 1.4rem;
+ }
+  
+  .skill_cont {
+    font-size: 0.9rem;
   }
 }
