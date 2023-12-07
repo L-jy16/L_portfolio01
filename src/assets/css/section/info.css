@@ -1,0 +1,305 @@
+#info {
+  margin: 4vw;
+}
+
+.aboutMe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  transform: scaleX(1);
+}
+
+.aboutMe::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--black);
+  border-bottom: 1px solid transparent;
+  transition: width 2s ease;
+}
+
+.aboutMe.active::before {
+  width: 100%;
+}
+
+
+.aboutme_En {
+  width: 75%;
+  font-weight: 400;
+  font-size: 4.9vw;
+  word-break: keep-all;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
+  line-height: 1.3;
+  overflow: hidden;
+  transform: scale(1);
+}
+
+.aboutme_En::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background-color: var(--black);
+  border-right: 1px solid transparent;
+  transition: height 2s ease;
+}
+
+.aboutme_En.active::before {
+  height: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.aboutme_ko {
+  width: 25%;
+  word-break: keep-all;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+  font-size: 1vw;
+  line-height: 1.5;
+}
+
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+  transform: scaleX(1);
+}
+
+.skill::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--black);
+  border-bottom: 1px solid transparent;
+  transition: width 2s ease;
+}
+
+.skill.active::before {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.skill_info {
+  width: 25%;
+  padding-top: 2.5vw;
+  font-size: 1.3vw;
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  transform: scaleX(1);
+}
+
+.skill_info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0;
+  background-color: var(--black);
+  border-right: 1px solid transparent;
+  transition: height 2s ease;
+}
+
+.skill_info.active::before {
+  height: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.skill_type {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill_type_cont {
+  padding: 2.5vw;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+  transform: scaleX(1);
+}
+
+.skill_type_cont::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--black);
+  border-right: 1px solid transparent;
+  transition: width 2s ease;
+}
+
+.skill_type_cont.active::before {
+  width: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.skill_type_cont::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 1px;
+  background-color: var(--black);
+  border-right: 1px solid transparent;
+  transition: width 2s ease;
+}
+
+.skill_type_cont.active::after {
+  height: 100%;
+  top: auto;
+  bottom: 0;
+}
+
+.skill_type_cont:nth-child(3)::before,
+.skill_type_cont:nth-child(4)::before {
+  display: none;
+}
+
+.skill_type_cont:nth-child(even)::after {
+  display: none;
+}
+
+.skill_name {
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  font-weight: 400;
+}
+
+.skill_cont {
+  font-size: 1.18vw;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .aboutMe::before {
+    display: none;
+  }
+
+  .aboutme_En {
+    width: 100%;
+    border-right: none;
+    font-size: 6vw;
+  }
+
+  .aboutme_En::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--black);
+    border-right: none;
+    border-bottom: 1px solid transparent;
+    transition: width 2s ease;
+  }
+
+  .aboutme_En.active::before {
+    height: 1px;
+    width: 100%;
+  }
+
+  .aboutme_ko {
+    width: 100%;
+    font-size: 3vw;
+    padding: 2vw 0;
+    position: relative;
+    overflow: hidden;
+    transform: scaleX(1);
+  }
+
+  .aboutme_ko::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--black);
+    border-bottom: 1px solid transparent;
+    transition: width 2s ease;
+  }
+
+  .aboutme_ko.active::before {
+    width: 100%;
+  }
+
+  .skill_info {
+    width: 100%;
+    border: none;
+    font-size: 5vw;
+    padding: 2vw 0;
+    font-weight: 700;
+  }
+
+  .skill_info::before {
+    display: none;
+  }
+
+  .skill_type {
+    width: 100%;
+  }
+
+  .skill_type_cont {
+    width: 100%;
+    border-right: none;
+    padding: 2.5vw 0;
+  }
+
+  .skill_type_cont::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--black);
+    border-right: none;
+    transition: width 2s ease;
+  }
+
+  .skill_type_cont.active::before {
+    width: 100%;
+  }
+
+  .skill_type_cont:nth-child(3)::before,
+  .skill_type_cont:nth-child(4)::before {
+    display: block;
+  }
+
+  .skill_type_cont::after {
+    display: none;
+  }
+
+  .skill_name {
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  .skill_cont {
+    font-size: 3vw;
+  }
+}
