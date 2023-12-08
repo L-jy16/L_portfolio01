@@ -1,6 +1,5 @@
 #script {
     margin: 8vw 4vw;
-
 }
 
 .script_inner {
@@ -8,15 +7,16 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
+    height: 70vh;
 }
 
 .script_title {
     width: 25%;
-    padding: 2.5vw;
+    padding: 2vw 2.5vw;
     border-top: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
     border-right: 1px solid var(--black);
-    font-size: 3vw;
+    font-size: 3.5rem;
     text-transform: uppercase;
 }
 
@@ -31,11 +31,10 @@
 }
 
 .script_type_cont {
-    padding: 2.5vw;
+    padding: 1.8vw 2.5vw;
     width: 50%;
-    height: 13vw;
+    height: 33.3333%;
     border-bottom: 1px solid var(--black);
-    position: relative;
     overflow: hidden;
 }
 
@@ -49,25 +48,41 @@
 
 
 .script_name {
-    font-size: 1.8vw;
+    font-size: 2rem;
 }
 
 .script_cont {
-    font-size: 0.8vw;
+    font-size: 1rem;
     line-height: 1.5;
-    flex-grow: 1
+    flex-grow: 1;
+    position: relative;
 }
 
 .script_btn {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    bottom: -3vw;
-    right: 0vw;
+    bottom: 0;
+    right: 0;
 }
 
 .script_view_btn {
     margin-right: 1vw;
+}
+
+@media (max-width: 1610px) {
+    .script_title {
+        font-size: 3.5rem;
+    }
+
+    .script_name {
+        font-size: 2rem;
+    }
+
+
+    .script_cont {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 800px) {
