@@ -7,7 +7,7 @@
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: space-between;
-    height: 70vh;
+    /* height: 70vh; */
 }
 
 .script_title {
@@ -31,11 +31,14 @@
 }
 
 .script_type_cont {
-    padding: 1.8vw 2.5vw;
+    padding: 2vw 2.5vw;
     width: 50%;
     height: 33.3333%;
     border-bottom: 1px solid var(--black);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .script_type_cont:nth-child(odd) {
@@ -47,6 +50,7 @@
 }
 
 
+
 .script_name {
     font-size: 2rem;
 }
@@ -55,33 +59,50 @@
     font-size: 1rem;
     line-height: 1.5;
     flex-grow: 1;
-    position: relative;
+    margin-bottom: 20px;
 }
 
 .script_btn {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    padding: 10px 0;
+    margin-top: auto;
 }
 
 .script_view_btn {
     margin-right: 1vw;
 }
 
-@media (max-width: 1610px) {
+@media (max-width: 1360px) {
     .script_title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .script_name {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
+    .script_cont {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 1110px) {
+    .script_title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 890px) {
+    .script_title {
+        font-size: 2.2rem;
+    }
+
+    .script_name {
+        font-size: 1.6rem;
+    }
 
     .script_cont {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -93,7 +114,48 @@
     .script_title {
         width: 100%;
         border-right: none;
-        /* font-size: 700px; */
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+
+    .script_type {
+        width: 100%;
+        border-top: none;
+    }
+
+    .script_type_cont {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2.5vw;
+    }
+
+    .box {
+        padding: 1vw 0;
+     }
+
+    .script_type_cont:nth-child(odd) {
+        border-right: none;
+    }
+
+    .script_name {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 1vw 0;
+    }
+
+    .script_cont {
+        font-size: 1.2rem;
+    }
+}
+
+/* @media (max-width: 800px) {
+    .script_inner {
+        display: block;
+    }
+
+    .script_title {
+        width: 100%;
+        border-right: none;
     }
 
     .script_type {
@@ -151,4 +213,4 @@
     .script_cont {
         font-size: 12px;
     }
-}
+} */

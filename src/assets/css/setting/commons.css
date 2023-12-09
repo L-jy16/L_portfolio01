@@ -18,55 +18,98 @@ body {
 /* 버튼 스타일 */
 .btn_style {
   display: inline-block;
-  width: 6vw;
-  height: 2vw;
+  width: 120px;
+  height: 40px;
   text-align: center;
   background: var(--black);
   color: var(--maincolor);
   border-radius: 50px;
-  line-height: 2vw;
+  line-height: 40px;
   vertical-align: middle;
   text-transform: uppercase;
+}
+
+
+@media (max-width:1150px) {
+  .btn_style {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .btn_style {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn_style {
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  .btn_style {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+  }
 }
 
 .btn_style2 {
   display: inline-block;
-  width: 6vw;
-  height: 2vw;
+  width: 100px;
+  height: 30px;
   text-align: center;
   background: var(--black);
   color: var(--maincolor);
   border-radius: 50px;
-  line-height: 2vw;
+  line-height: 30px;
   vertical-align: middle;
   text-transform: uppercase;
+  font-size: 1.1rem;
 }
 
+@media (max-width: 1300px) {
+  .btn_style2 {
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
 
-@media (max-width:800px) {
-  .btn_style {
-    width: 15vw;
-    height: 4vw;
-    line-height: 4vw;
-    font-size: 2vw;
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 1100px) {
   .btn_style2 {
-    width: 8vw;
-    height: 3vw;
-    line-height: 3vw;
-    font-size: 1.5vw;
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width: 800px) {
   .btn_style2 {
-    width: 15vw;
-    height: 4vw;
-    line-height: 4vw;
-    font-size: 2vw;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .btn_style2 {
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 1rem;
   }
 }
 
