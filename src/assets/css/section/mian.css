@@ -81,6 +81,7 @@
   width: 140%;
   height: 160%;
   background-image: url(../../image/main_img.jpg);
+  /* background-image: url(../../image/portfolio_me.jpg); */
   background-size: cover;
   background-position: center;
 }

@@ -71,7 +71,12 @@ export function section() {
         opacity: 0,
     })
 
-    gsap.set(".aboutme_ko.split.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
+    // gsap.set(".aboutme_ko.split.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
+    //     opacity: 0.6,
+    //     yPercent: 200
+    // });
+
+    gsap.set(".aboutme__ko__img.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
         opacity: 0.6,
         yPercent: 200
     });
@@ -80,7 +85,8 @@ export function section() {
         a1 = gsap.timeline({ paused: true });
 
         a1.to(".aboutme_En.split.a1 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
-        a1.to(".aboutme_ko.split.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        // a1.to(".aboutme_ko.split.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        a1.to(".aboutme__ko__img.a2.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
         a1.to(".skill_info.split.a3 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
         a1.to(".info_box.split.a4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
         a1.to(".info_box.split.a5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
@@ -96,7 +102,8 @@ export function section() {
         onEnter: () => {
             document.querySelector('.aboutMe').classList.add('active');
             document.querySelector('.aboutme_En').classList.add('active');
-            document.querySelector('.aboutme_ko').classList.add('active');
+            // document.querySelector('.aboutme_ko').classList.add('active');
+            document.querySelector('.aboutme__ko__img').classList.add('active');
             document.querySelector('.skill').classList.add('active');
             document.querySelector('.skill_info').classList.add('active');
             document.querySelectorAll('.skill_type_cont').forEach((el) => {
@@ -107,7 +114,8 @@ export function section() {
         onLeaveBack: () => {
             document.querySelector('.aboutMe').classList.remove('active');
             document.querySelector('.aboutme_En').classList.remove('active');
-            document.querySelector('.aboutme_ko').classList.remove('active');
+            // document.querySelector('.aboutme_ko').classList.remove('active');
+            document.querySelector('.aboutme__ko__img').classList.remove('active');
             document.querySelector('.skill').classList.remove('active');
             document.querySelector('.skill_info').classList.remove('active');
             document.querySelectorAll('.skill_type_cont').forEach((el) => {

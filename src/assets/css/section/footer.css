@@ -31,6 +31,16 @@
     margin: 4vw 2vw;
 }
 
+/* .profile_picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 4vw;
+  } */
+  
+
 .footer_page {
     display: flex;
     flex-direction: column;
@@ -143,11 +153,11 @@
         font-size: 3.8rem;
     }
 
-    .page_title,
+    /* .page_title, */
     .contact_title {
         font-size: 1.8rem;
     }
-    .page_info>ul>li>a,
+    /* .page_info>ul>li>a, */
     .contact_info>ul>li>a {
         font-size: 1.2rem;
     }
@@ -204,11 +214,11 @@
         font-size: 3.5rem;
     }
 
-    .page_title,
+    /* .page_title, */
     .contact_title {
         font-size: 2rem;
     }
-    .page_info>ul>li>a,
+    /* .page_info>ul>li>a, */
     .contact_info>ul>li>a {
         font-size: 1.6rem;
     }
