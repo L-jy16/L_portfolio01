@@ -160,10 +160,10 @@
   top: 0;
   right: 0;
   width: 1px;
-  height: 1px;
+  height: 0;
   background-color: var(--black);
   border-right: 1px solid transparent;
-  transition: width 2s ease;
+  transition: height 2s ease;
 }
 
 .skill_type_cont.active::after {
@@ -253,7 +253,7 @@
   .aboutme_En {
     font-size: 3.4rem;
   }
-  
+
   .aboutme_ko {
     font-size: 0.8rem;
   }
@@ -398,18 +398,19 @@
   .aboutme_En {
     font-size: 2.4rem;
   }
+
   .aboutme_ko {
     font-size: 1.3rem;
   }
-  
+
   .skill_info {
     font-size: 2.4rem;
   }
-  
+
   .skill_name {
     font-size: 1.8rem;
- }
-  
+  }
+
   .skill_cont {
     font-size: 1.4rem;
   }
@@ -419,18 +420,19 @@
   .aboutme_En {
     font-size: 2rem;
   }
+
   .aboutme_ko {
     font-size: 1.1rem;
   }
-  
+
   .skill_info {
     font-size: 2.1rem;
   }
-  
+
   .skill_name {
     font-size: 1.6rem;
- }
-  
+  }
+
   .skill_cont {
     font-size: 1.1rem;
   }

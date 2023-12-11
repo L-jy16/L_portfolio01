@@ -65,6 +65,30 @@ export function section() {
 
     // section2
 
+    let a1;
+
+    gsap.set(".aboutme_En.split.a1 .line, .skill_info.split.a3 .line", {
+        opacity: 0,
+    })
+
+    gsap.set(".aboutme_ko.split.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
+        opacity: 0.6,
+        yPercent: 200
+    });
+
+    setTimeout(() => {
+        a1 = gsap.timeline({ paused: true });
+
+        a1.to(".aboutme_En.split.a1 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
+        a1.to(".aboutme_ko.split.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        a1.to(".skill_info.split.a3 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
+        a1.to(".info_box.split.a4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        a1.to(".info_box.split.a5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        a1.to(".info_box.split.a6", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+        a1.to(".info_box.split.a7", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    }, 1000)
+
+
     ScrollTrigger.create({
         trigger: "#section2",
         start: "top 50%",
@@ -77,7 +101,8 @@ export function section() {
             document.querySelector('.skill_info').classList.add('active');
             document.querySelectorAll('.skill_type_cont').forEach((el) => {
                 el.classList.add('active');
-            })
+            });
+            a1.play();
         },
         onLeaveBack: () => {
             document.querySelector('.aboutMe').classList.remove('active');
@@ -87,7 +112,8 @@ export function section() {
             document.querySelector('.skill_info').classList.remove('active');
             document.querySelectorAll('.skill_type_cont').forEach((el) => {
                 el.classList.remove('active');
-            })
+            });
+            a1.reverse();
         },
         markers: false
     })
