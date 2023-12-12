@@ -69,3 +69,27 @@
         url('https://cdn.jsdelivr.net/gh/webfontworld/gmarket/GmarketSansBold.ttf') format("truetype");
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'PPRader';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../fonts/PPRader-Bold.otf') format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/PPRader-Regular.otfPPRader-Bold.otf') format('otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    font-weight: 100;
+    font-style: normal;
+    src: url('../fonts/PPRader-Thin.otfPPRader-Bold.otf') format('otf');
+    font-display: swap;
+}

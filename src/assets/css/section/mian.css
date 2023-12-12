@@ -11,8 +11,9 @@
   margin: 0 5vw;
   font-weight: 400;
   font-size: 9.8rem;
-  font-family: var(--main-font);
   line-height: 1.15;
+  font-family: var(--mainEn-font);
+  font-weight: bold;
 }
 
 .main__title>div {
@@ -76,14 +77,15 @@
 
 .main__image .img {
   position: absolute;
-  top: 15%;
-  left: -15%;
-  width: 140%;
-  height: 160%;
-  background-image: url(../../image/main_img.jpg);
+    width: 130%;
+    height: 160%;
+    left: -15%;
+    top: 15%;
+    background-size: 100%;
+  background-image: url(../../image/main_img.avif);
   /* background-image: url(../../image/portfolio_me.jpg); */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
 }
 
 @media (max-width: 1580px) {
