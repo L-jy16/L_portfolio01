@@ -2,17 +2,25 @@
     --main-font: "NexonLv1Gothic";
     --mainNum-font: "gmarket";
     --mainEn-font: "PPRader";
+    --mainko-font: "IropkeBatang";
 
     --maincolor: #F5F3EF;
     --maincolorDeep: #f3e8d4;
     --maincolor_op: #f5f3ef91;
 
+    --work_box1: #d4d4aa;
+    --work_box2: #d4c7aa;
+    --work_box3: #d4aac4;
+    --work_box4: #aac4d4;
+    --work_box5: #d4aaa1;
+    --work_box6: #a4d4aa;
+
     --white: #ffffff;
     --white100: #e8e8e8;
     --white200: #dddddd;
     --white300: #c1c1c1;
-    --white400: #b3b3b3;
-    --white500: #a4a4a4;
+    --white400: #6b6b6b;
+    --white500: #333333;
 
     --black: #000000;
     --black100: #1e1e21;

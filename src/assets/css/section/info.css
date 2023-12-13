@@ -3,63 +3,70 @@
 }
 
 .aboutMe__En {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-family: var(--mainEn-font);
-  margin-bottom: 20px;
   line-height: 1.3;
   margin-bottom: 4vw;
 }
 
 .skill {
   display: grid;
-  grid-template-columns: 40% 30% 30%;
-  /* grid-template-rows: 33.3333%; */
+  grid-template-columns: 34% 33% 33%;
+  grid-template-rows: 200px 200px 200px;
   grid-template-areas:
-    1 2 3
-    1 4 5
-    1 6 7
+  "box1 box2 box3"
+  "box1 box4 box5"
+  "box1 box6 box7";
 }
 
 .skill__detail:nth-child(1) {
-  grid-area: 1 / 1 / span 3 / span 1;
-}
-
-.skill__detail:nth-child(2) {
-  grid-area: 1 / 2 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(3) {
-  grid-area: 1 / 3 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(4) {
-  grid-area: 2 / 2 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(5) {
-  grid-area: 2 / 3 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(6) {
-  grid-area: 3 / 2 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(7) {
-  grid-area: 3 / 3 / span 1 / span 1;
-}
-
-.skill__detail:nth-child(1) {
-  width: 100%;
+  grid-area: box1;
+  width: 85%;
+  height: 100%;
   background-image: url(../../image/min.png);
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
+.skill__detail:nth-child(2) {
+  grid-area: box2;
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+.skill__detail:nth-child(3) {
+  grid-area: box3;
+  border-bottom: 1px solid var(--black);
+}
+
+.skill__detail:nth-child(4) {
+  grid-area: box4;
+  border-right: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+}
+
+.skill__detail:nth-child(5) {
+  grid-area: box5;
+  border-bottom: 1px solid var(--black);
+}
+
+.skill__detail:nth-child(6) {
+  grid-area: box6;
+  border-right: 1px solid var(--black);
+}
+
+.skill__detail:nth-child(7) {
+  grid-area: box7;
+}
+
+/* 
 .skill__detail {
   padding: 10px;
-}
+} */
 
 .skill__detail>h4 {
+  padding: 1vw;
   font-size: 2rem;
   text-transform: uppercase;
   font-family: var(--mainEn-font);
@@ -67,34 +74,7 @@
 
 .skill__detail>p {
   font-size: 1.2rem;
+  padding: 0 1vw 1vw 1vw;
   text-transform: uppercase;
-  font-family: var(--mainEn-font);
+  font-family: var(--mainko-font);
 }
-
-.skill__detail:nth-child(1) {
-  /* border-right: 1px solid var(--black); */
-}
-
-.skill__detail:nth-child(2) {
-  border-right: 1px solid var(--black);
-  border-bottom: 1px solid var(--black);
-}
-
-.skill__detail:nth-child(3) {
-  border-bottom: 1px solid var(--black);
-}
-
-.skill__detail:nth-child(4) {
-  border-right: 1px solid var(--black);
-  border-bottom: 1px solid var(--black);
-}
-
-.skill__detail:nth-child(5) {
-  border-bottom: 1px solid var(--black);
-}
-
-.skill__detail:nth-child(6) {
-  border-right: 1px solid var(--black);
-}
-
-.skill__detail:nth-child(7) {}

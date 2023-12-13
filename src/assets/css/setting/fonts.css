@@ -71,18 +71,40 @@
 }
 
 @font-face {
-    font-family: 'PPRader';
-    font-weight: 700;
+    font-family: 'IropkeBatang';
+    font-weight: normal;
     font-style: normal;
-    src: url('../fonts/PPRader-Bold.otf') format('otf');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/iropke/IropkeBatang.ttf') format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PartizenoRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/PartizenoRegular.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'PPRader';
-    font-weight: 400;
+    font-weight: 700;
     font-style: normal;
-    src: url('../fonts/PPRader-Regular.otf') format('otf');
+    src: url('../fonts/PPRader-Bold.woff2') format('woff2'),
+        url('../fonts/PPRader-Bold.woff') format('woff');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PPRader';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/PPRader-Regular.woff2') format('woff2'),
+        url('../fonts/PPRader-Regular.woff') format('woff');
     font-display: swap;
 }
 
@@ -90,6 +112,7 @@
     font-family: 'PPRader';
     font-weight: 100;
     font-style: normal;
-    src: url('../fonts/PPRader-Thin.otf') format('otf');
+    src: url('../fonts/PPRader-Thin.woff2') format('woff2'),
+        url('../fonts/PPRader-Thin.woff') format('woff');
     font-display: swap;
 }
