@@ -12,7 +12,7 @@
   font-weight: 400;
   font-size: 9.8rem;
   line-height: 1.15;
-  font-family: var(--mainEn-font);
+  font-family: 'PPRader';
   font-weight: bold;
 }
 
@@ -77,11 +77,11 @@
 
 .main__image .img {
   position: absolute;
-    width: 130%;
-    height: 160%;
-    left: -15%;
-    top: 15%;
-    background-size: 100%;
+  width: 130%;
+  height: 160%;
+  left: -15%;
+  top: 15%;
+  background-size: 100%;
   background-image: url(../../image/main_img.avif);
   /* background-image: url(../../image/portfolio_me.jpg); */
   /* background-size: cover;
@@ -92,9 +92,11 @@
   .main__title {
     font-size: 9rem;
   }
+
   .scroll__left span {
     font-size: 2.3rem;
   }
+
   .scroll__right span {
     font-size: 2.3rem;
   }
@@ -105,9 +107,11 @@
   .main__title {
     font-size: 8rem;
   }
+
   .scroll__left span {
     font-size: 2rem;
   }
+
   .scroll__right span {
     font-size: 2rem;
   }
@@ -118,9 +122,11 @@
   .main__title {
     font-size: 7rem;
   }
+
   .scroll__left span {
     font-size: 1.5rem;
   }
+
   .scroll__right span {
     font-size: 1.5rem;
   }
@@ -131,9 +137,11 @@
   .main__title {
     font-size: 6rem;
   }
+
   .scroll__left span {
     font-size: 1.3rem;
   }
+
   .scroll__right span {
     font-size: 1.3rem;
   }
@@ -154,9 +162,11 @@
   .main__title {
     font-size: 5rem;
   }
+
   .scroll__left span {
     font-size: 1.1rem;
   }
+
   .scroll__right span {
     font-size: 1.1rem;
   }
@@ -168,12 +178,15 @@
     margin: 0 4vw;
     font-size: 4.5rem;
   }
+
   .scroll__left span {
     font-size: 0.9rem;
   }
+
   .scroll__right span {
     font-size: 0.9rem;
   }
+
   .scroll__left img {
     width: 0.9rem;
     height: 0.9rem;
@@ -196,22 +209,23 @@
     font-size: 4rem;
 
   }
- 
+
 }
 
 @media (max-width: 620px) {
   .main__title {
     font-size: 3.5rem;
   }
- 
+
 }
 
 @media (max-width: 560px) {
   .main__title {
     font-size: 3rem;
   }
- 
+
 }
+
 @media (max-width: 500px) {
   .main__title {
     font-size: 2.5rem;
@@ -222,5 +236,5 @@
   .main__title {
     font-size: 2.2rem;
   }
- 
+
 }
