@@ -128,36 +128,36 @@ export function section() {
 
     // section3
 
-    // desc 숨긴거 오버시 보여주기
-    let desc = document.querySelectorAll(".work_site");
+    // // desc 숨긴거 오버시 보여주기
+    // let desc = document.querySelectorAll(".work_site");
 
-    desc.forEach(descitem => {
-        descitem.addEventListener("mouseover", function () {
-            this.querySelector(".desc").style.display = "block"
-        })
-        descitem.addEventListener("mouseout", function () {
-            this.querySelector(".desc").style.display = "none"
-        })
-    })
+    // desc.forEach(descitem => {
+    //     descitem.addEventListener("mouseover", function () {
+    //         this.querySelector(".desc").style.display = "block"
+    //     })
+    //     descitem.addEventListener("mouseout", function () {
+    //         this.querySelector(".desc").style.display = "none"
+    //     })
+    // })
 
-    // 가로형 모드
-    gsap.registerPlugin(ScrollTrigger);
-    const horSection = gsap.utils.toArray(".work_site");
+    // // 가로형 모드
+    // gsap.registerPlugin(ScrollTrigger);
+    // const horSection = gsap.utils.toArray(".work_site");
 
-    gsap.to(horSection, {
-        xPercent: -120 * (horSection.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: "#section3",
-            start: "top top",
-            end: "+=3000",
-            pin: true,
-            scrub: 1,
-            // markers: true,
-            invalidateOnRefresh: true,
-            anticipatePin: 1,
-        }
-    });
+    // gsap.to(horSection, {
+    //     xPercent: -120 * (horSection.length - 1),
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: "#section3",
+    //         start: "top top",
+    //         end: "+=3000",
+    //         pin: true,
+    //         scrub: 1,
+    //         // markers: true,
+    //         invalidateOnRefresh: true,
+    //         anticipatePin: 1,
+    //     }
+    // });
 
     // section4
     let s0;

@@ -203,7 +203,7 @@
   .skill__detail:nth-child(1) {
     grid-area: box1;
     width: 85%;
-    height: 32%;
+    height: 28%;
     position: sticky;
     top: 5vw;
   }
