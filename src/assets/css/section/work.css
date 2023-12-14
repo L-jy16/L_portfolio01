@@ -1,6 +1,7 @@
 #section3 {
   padding: 4vw 0 10vw 0;
   background-color: var(--maincolorDeep);
+  overflow: hidden;
 }
 
 .work h2 {
@@ -16,13 +17,25 @@
   margin-bottom: 4vw;
 }
 
+/* 
+.work_list {
+  display: flex;
+  width: 200%;
+  justify-content: space-between;
+}
+
+.work_site {
+  width: 33.3333%;
+  margin-right: 2vw;
+} */
+
 .work_list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .work_site {
-  width: 33.333%;
+  width: 33.3333%;
 }
 
 .work_site .img {
@@ -101,6 +114,7 @@
   font-size: 1.1rem;
   font-family: var(--mainko-font);
   color: var(--white500);
+  display: none;
 }
 
 .work_site .work_btn {
