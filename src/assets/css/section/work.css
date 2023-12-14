@@ -17,7 +17,7 @@
   margin-bottom: 4vw;
 }
 
-/* 
+
 .work_list {
   display: flex;
   width: 200%;
@@ -26,17 +26,17 @@
 
 .work_site {
   width: 33.3333%;
-  margin-right: 2vw;
-} */
+  margin-left: 2vw;
+}
 
-.work_list {
+/* .work_list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .work_site {
   width: 33.3333%;
-}
+} */
 
 .work_site .img {
   padding-bottom: 56.25%;
@@ -104,7 +104,7 @@
 }
 
 .work_site .work_info h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
   font-weight: bold;
   color: var(--white500);
@@ -148,5 +148,4 @@
   .work_info_cont {
     font-size: 1.2rem;
   }
-}
- */
+} */

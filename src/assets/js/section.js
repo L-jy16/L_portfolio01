@@ -141,23 +141,23 @@ export function section() {
     })
 
     // 가로형 모드
-    // gsap.registerPlugin(ScrollTrigger);
-    // const horSection = gsap.utils.toArray(".work_site");
+    gsap.registerPlugin(ScrollTrigger);
+    const horSection = gsap.utils.toArray(".work_site");
 
-    // gsap.to(horSection, {
-    //     xPercent: -120 * (horSection.length - 1),
-    //     ease: "none",
-    //     scrollTrigger: {
-    //         trigger: "#section3",
-    //         start: "top top",
-    //         end: "+=3000",
-    //         pin: true,
-    //         scrub: 1,
-    //         // markers: true,
-    //         invalidateOnRefresh: true,
-    //         anticipatePin: 1,
-    //     }
-    // });
+    gsap.to(horSection, {
+        xPercent: -120 * (horSection.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: "#section3",
+            start: "top top",
+            end: "+=3000",
+            pin: true,
+            scrub: 1,
+            // markers: true,
+            invalidateOnRefresh: true,
+            anticipatePin: 1,
+        }
+    });
 
     // section4
     let s0;
