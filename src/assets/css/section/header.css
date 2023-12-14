@@ -104,6 +104,7 @@
 .nav>ul>li>a {
     color: var(--maincolor);
     font-size: 5vw;
+    font-family: var(--mainEn-font);
 }
 
 .nav>ul>li>a:hover {

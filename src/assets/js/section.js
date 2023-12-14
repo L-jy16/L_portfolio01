@@ -63,160 +63,160 @@ export function section() {
 
     }, 1000)
 
-    // section2
+    // // section2
 
-    let a1;
+    // let a1;
 
-    gsap.set(".aboutme_En.split.a1 .line, .skill_info.split.a3 .line", {
-        opacity: 0,
-    })
+    // gsap.set(".aboutme_En.split.a1 .line, .skill_info.split.a3 .line", {
+    //     opacity: 0,
+    // })
 
-    // gsap.set(".aboutme_ko.split.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
+    // // gsap.set(".aboutme_ko.split.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
+    // //     opacity: 0.6,
+    // //     yPercent: 200
+    // // });
+
+    // gsap.set(".aboutme__ko__img.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
     //     opacity: 0.6,
     //     yPercent: 200
     // });
 
-    gsap.set(".aboutme__ko__img.a2, .info_box.split.a4, .info_box.split.a5, .info_box.split.a6,.info_box.split.a7", {
-        opacity: 0.6,
-        yPercent: 200
-    });
+    // setTimeout(() => {
+    //     a1 = gsap.timeline({ paused: true });
 
-    setTimeout(() => {
-        a1 = gsap.timeline({ paused: true });
-
-        a1.to(".aboutme_En.split.a1 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
-        // a1.to(".aboutme_ko.split.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        a1.to(".aboutme__ko__img.a2.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        a1.to(".skill_info.split.a3 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
-        a1.to(".info_box.split.a4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        a1.to(".info_box.split.a5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        a1.to(".info_box.split.a6", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        a1.to(".info_box.split.a7", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-    }, 1000)
+    //     a1.to(".aboutme_En.split.a1 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
+    //     // a1.to(".aboutme_ko.split.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     a1.to(".aboutme__ko__img.a2.a2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     a1.to(".skill_info.split.a3 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, })
+    //     a1.to(".info_box.split.a4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     a1.to(".info_box.split.a5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     a1.to(".info_box.split.a6", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     a1.to(".info_box.split.a7", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    // }, 1000)
 
 
-    ScrollTrigger.create({
-        trigger: "#section2",
-        start: "top 50%",
-        end: "bottom 20%",
-        onEnter: () => {
-            document.querySelector('.aboutMe').classList.add('active');
-            document.querySelector('.aboutme_En').classList.add('active');
-            // document.querySelector('.aboutme_ko').classList.add('active');
-            document.querySelector('.aboutme__ko__img').classList.add('active');
-            document.querySelector('.skill').classList.add('active');
-            document.querySelector('.skill_info').classList.add('active');
-            document.querySelectorAll('.skill_type_cont').forEach((el) => {
-                el.classList.add('active');
-            });
-            a1.play();
-        },
-        onLeaveBack: () => {
-            document.querySelector('.aboutMe').classList.remove('active');
-            document.querySelector('.aboutme_En').classList.remove('active');
-            // document.querySelector('.aboutme_ko').classList.remove('active');
-            document.querySelector('.aboutme__ko__img').classList.remove('active');
-            document.querySelector('.skill').classList.remove('active');
-            document.querySelector('.skill_info').classList.remove('active');
-            document.querySelectorAll('.skill_type_cont').forEach((el) => {
-                el.classList.remove('active');
-            });
-            a1.reverse();
-        },
-        markers: false
-    })
+    // ScrollTrigger.create({
+    //     trigger: "#section2",
+    //     start: "top 50%",
+    //     end: "bottom 20%",
+    //     onEnter: () => {
+    //         document.querySelector('.aboutMe').classList.add('active');
+    //         document.querySelector('.aboutme_En').classList.add('active');
+    //         // document.querySelector('.aboutme_ko').classList.add('active');
+    //         document.querySelector('.aboutme__ko__img').classList.add('active');
+    //         document.querySelector('.skill').classList.add('active');
+    //         document.querySelector('.skill_info').classList.add('active');
+    //         document.querySelectorAll('.skill_type_cont').forEach((el) => {
+    //             el.classList.add('active');
+    //         });
+    //         a1.play();
+    //     },
+    //     onLeaveBack: () => {
+    //         document.querySelector('.aboutMe').classList.remove('active');
+    //         document.querySelector('.aboutme_En').classList.remove('active');
+    //         // document.querySelector('.aboutme_ko').classList.remove('active');
+    //         document.querySelector('.aboutme__ko__img').classList.remove('active');
+    //         document.querySelector('.skill').classList.remove('active');
+    //         document.querySelector('.skill_info').classList.remove('active');
+    //         document.querySelectorAll('.skill_type_cont').forEach((el) => {
+    //             el.classList.remove('active');
+    //         });
+    //         a1.reverse();
+    //     },
+    //     markers: false
+    // })
 
-    // section3
-    let currentIndex = 0;
-    const marqueeWrap = document.querySelector(".marquee")
-    const marquee_heading_Clone = marqueeWrap.firstElementChild.cloneNode(true);
-    marqueeWrap.appendChild(marquee_heading_Clone);
+    // // section3
+    // let currentIndex = 0;
+    // const marqueeWrap = document.querySelector(".marquee")
+    // const marquee_heading_Clone = marqueeWrap.firstElementChild.cloneNode(true);
+    // marqueeWrap.appendChild(marquee_heading_Clone);
 
-    const marquee_heading = document.querySelectorAll(".marquee .marquee-heading");
+    // const marquee_heading = document.querySelectorAll(".marquee .marquee-heading");
 
-    setInterval(() => {
-        currentIndex++;
+    // setInterval(() => {
+    //     currentIndex++;
 
-        gsap.to(marquee_heading, {
-            duration: 3,
-            x: -200,
-            scrollTrigger: {
-                trigger: marqueeWrap,
-                start: "top 50%",
-                end: "bottom 20%",
-                scrub: true
-            }
-        });
+    //     gsap.to(marquee_heading, {
+    //         duration: 3,
+    //         x: -200,
+    //         scrollTrigger: {
+    //             trigger: marqueeWrap,
+    //             start: "top 50%",
+    //             end: "bottom 20%",
+    //             scrub: true
+    //         }
+    //     });
 
-        if (currentIndex == 6) {
-            setTimeout(() => {
+    //     if (currentIndex == 6) {
+    //         setTimeout(() => {
 
-                gsap.to(marquee_heading, {
-                    duration: 0,
-                    x: 0,
-                    scrollTrigger: {
-                        trigger: marqueeWrap,
-                        start: "top 50%",
-                        end: "bottom 20%",
-                        scrub: true
-                    }
-                });
-                currentIndex = 0;
-            }, 700)
-        }
-    }, 3000)
+    //             gsap.to(marquee_heading, {
+    //                 duration: 0,
+    //                 x: 0,
+    //                 scrollTrigger: {
+    //                     trigger: marqueeWrap,
+    //                     start: "top 50%",
+    //                     end: "bottom 20%",
+    //                     scrub: true
+    //                 }
+    //             });
+    //             currentIndex = 0;
+    //         }, 700)
+    //     }
+    // }, 3000)
 
-    // section3 이미지 youtube
-    gsap.to("#youtube", {
-        yPercent: 20,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-            trigger: ".work_info.i1",
-            start: "top bottom",
-            end: "bottom top",
-            markers: false,
-            scrub: true
-        }
-    });
-    gsap.to("#myuduck", {
-        yPercent: 20,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-            trigger: ".work_info.i2",
-            start: "top bottom",
-            end: "bottom top",
-            markers: false,
-            scrub: true
-        }
-    });
+    // // section3 이미지 youtube
+    // gsap.to("#youtube", {
+    //     yPercent: 20,
+    //     ease: "none",
+    //     duration: 0.5,
+    //     scrollTrigger: {
+    //         trigger: ".work_info.i1",
+    //         start: "top bottom",
+    //         end: "bottom top",
+    //         markers: false,
+    //         scrub: true
+    //     }
+    // });
+    // gsap.to("#myuduck", {
+    //     yPercent: 20,
+    //     ease: "none",
+    //     duration: 0.5,
+    //     scrollTrigger: {
+    //         trigger: ".work_info.i2",
+    //         start: "top bottom",
+    //         end: "bottom top",
+    //         markers: false,
+    //         scrub: true
+    //     }
+    // });
 
-    gsap.to("#movie", {
-        yPercent: 20,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-            trigger: ".work_info.i3",
-            start: "top bottom",
-            end: "bottom top",
-            markers: false,
-            scrub: true
-        }
-    });
+    // gsap.to("#movie", {
+    //     yPercent: 20,
+    //     ease: "none",
+    //     duration: 0.5,
+    //     scrollTrigger: {
+    //         trigger: ".work_info.i3",
+    //         start: "top bottom",
+    //         end: "bottom top",
+    //         markers: false,
+    //         scrub: true
+    //     }
+    // });
 
-    gsap.to("#blog", {
-        yPercent: 20,
-        ease: "none",
-        duration: 0.5,
-        scrollTrigger: {
-            trigger: ".work_info.i4",
-            start: "top bottom",
-            end: "bottom top",
-            markers: false,
-            scrub: true
-        }
-    });
+    // gsap.to("#blog", {
+    //     yPercent: 20,
+    //     ease: "none",
+    //     duration: 0.5,
+    //     scrollTrigger: {
+    //         trigger: ".work_info.i4",
+    //         start: "top bottom",
+    //         end: "bottom top",
+    //         markers: false,
+    //         scrub: true
+    //     }
+    // });
 
     // section4
     let s0;
