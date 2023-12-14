@@ -18,7 +18,7 @@
 }
 
 
-/* .work_list {
+.work_list {
   display: flex;
   width: 200%;
   justify-content: space-between;
@@ -27,17 +27,17 @@
 .work_site {
   width: 33.3333%;
   margin-left: 2vw;
-} */
+}
 
 
-.work_list {
+/* .work_list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .work_site {
   width: 33.3333%;
-}
+} */
 
 .work_site .img {
   padding-bottom: 56.25%;
