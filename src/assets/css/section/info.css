@@ -60,7 +60,11 @@
   grid-area: box7;
 }
 
-.skill__detail>h4 {
+.skill__detail {
+  overflow: hidden;
+}
+
+.skill__detail .infoBox>h4 {
   padding: 1vw;
   font-size: 2rem;
   text-transform: uppercase;
@@ -68,7 +72,7 @@
   line-height: 1;
 }
 
-.skill__detail>p {
+.skill__detail .infoBox>p {
   font-size: 1.2rem;
   padding: 0 1vw 1vw 1vw;
   text-transform: uppercase;
@@ -87,7 +91,7 @@
     height: auto;
   }
 
-  .skill__detail>h4 {
+  .skill__detail .infoBox>h4 {
     padding: 1vw 1vw 0.5rem 1vw;
   }
 }
@@ -104,12 +108,12 @@
     height: 90%;
   }
 
-  .skill__detail>h4 {
+  .skill__detail .infoBox>h4 {
     font-size: 1.8rem;
     padding: 1vw 1vw 0.5rem 1vw;
   }
 
-  .skill__detail>p {
+  .skill__detail .infoBox>p {
     font-size: 1rem;
   }
 }
@@ -172,12 +176,12 @@
     grid-area: box7;
   }
 
-  .skill__detail>h4 {
+  .skill__detail .infoBox>h4 {
     font-size: 1.8rem;
     padding: 2vw 1vw 1vw 1vw;
   }
 
-  .skill__detail>p {
+  .skill__detail .infoBox>p {
     font-size: 1rem;
   }
 }
@@ -208,12 +212,12 @@
     top: 5vw;
   }
 
-  .skill__detail>h4 {
+  .skill__detail .infoBox>h4 {
     font-size: 1.5rem;
     padding: 2vw 1vw 0.5vw 1vw;
   }
 
-  .skill__detail>p {
+  .skill__detail .infoBox>p {
     font-size: 0.8rem;
   }
 }

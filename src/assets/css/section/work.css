@@ -27,8 +27,13 @@
 .work_site {
   width: 33.3333%;
   margin-left: 2vw;
+  padding: 1vw;
+  margin-top: 1vw;
 }
 
+.work_site:hover {
+  margin-top: -1vw;
+}
 
 /* .work_list {
   display: flex;
@@ -44,6 +49,7 @@
   height: 40%;
   background-size: cover;
   background-position: center center;
+  border-radius: 15px;
 }
 
 .work_site:nth-child(1) .img {
