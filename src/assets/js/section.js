@@ -164,17 +164,18 @@ export function section() {
 
     // section3
 
-    // // desc 숨긴거 오버시 보여주기
-    // let desc = document.querySelectorAll(".work_site");
+    // desc 숨긴거 오버시 보여주기
+    let desc = document.querySelectorAll(".work_site");
 
-    // desc.forEach(descitem => {
-    //     descitem.addEventListener("mouseover", function () {
-    //         this.querySelector(".desc").style.display = "block"
-    //     })
-    //     descitem.addEventListener("mouseout", function () {
-    //         this.querySelector(".desc").style.display = "none"
-    //     })
-    // })
+    desc.forEach(descitem => {
+        descitem.addEventListener("mouseover", function () {
+            this.querySelector(".work_info").classList.add("visible");
+        });
+
+        descitem.addEventListener("mouseout", function () {
+            this.querySelector(".work_info").classList.remove("visible");
+        });
+    });
 
     // 가로형 모드
     gsap.registerPlugin(ScrollTrigger);
