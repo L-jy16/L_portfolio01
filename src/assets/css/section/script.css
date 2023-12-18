@@ -49,7 +49,20 @@
     border-bottom: none;
 }
 
-
+.box img {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    object-fit: cover;
+    width: 150px;
+    border-radius: 20px;
+    pointer-events: none;
+    will-change: transform;    
+}
+.script_type_cont:hover .box img {
+    opacity: 1;
+    visibility: hidden;
+}
 
 .script_name {
     font-size: 2rem;

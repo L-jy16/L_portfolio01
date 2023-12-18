@@ -83,7 +83,7 @@ export function section() {
     setTimeout(() => {
         i1 = gsap.timeline({ paused: true });
 
-        i1.to(".aboutMe__En.split.i1 .word", { opacity: 1, ease: "power1.out", duration: 0.4, stagger: 0.1, })
+        i1.to(".aboutMe__En.split.i1 .word", { opacity: 1, ease: "power1.out", duration: 0.2, stagger: 0.1, })
         i1.to(".skill__detail.img", { opacity: 1, ease: "power1.out", duration: 0.4, stagger: 0.1, })
         i1.to(".infoBox.i2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
         i1.to(".infoBox.i3", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
@@ -164,24 +164,10 @@ export function section() {
 
     // section3
 
-    // desc 숨긴거 오버시 보여주기
-    // let desc = document.querySelectorAll(".work_site");
-
-    // desc.forEach(descitem => {
-    //     descitem.addEventListener("mouseover", function () {
-    //         this.querySelector(".work_info").classList.add("visible");
-    //     });
-
-    //     descitem.addEventListener("mouseout", function () {
-    //         this.querySelector(".work_info").classList.remove("visible");
-    //     });
-    // });
-
     // swiper
 
-    let swiper = new Swiper(".work_list", {
+    let swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
-        grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
         coverflowEffect: {
@@ -191,31 +177,77 @@ export function section() {
             modifier: 1,
             slideShadows: true,
         },
-        pagination: {
-            el: ".swiper-pagination",
+        mousewheel: {
+            enabled: true,
         },
     });
 
-    // 가로형 모드
-    gsap.registerPlugin(ScrollTrigger);
-    const horSection = gsap.utils.toArray(".work_site");
+      // Swiper의 슬라이드 개수
+    const slideCount = swiper.slides.length;
 
-    gsap.to(horSection, {
-        xPercent: -120 * (horSection.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: "#section3",
-            start: "top top",
-            end: "+=3000",
-            pin: true,
-            scrub: 1,
-            // markers: true,
-            invalidateOnRefresh: true,
-            anticipatePin: 1,
-        }
-    });
+    // Swiper 슬라이드의 너비
+    const slideWidth = swiper.slides[0].offsetWidth;
+
+    ScrollTrigger.create({
+        trigger: "#section3",
+        start: "top top",
+        end: `+=${(slideCount - 4) * slideWidth}`,
+        pin: true,
+    })
+
+
+    // // 가로형 모드
+    // gsap.registerPlugin(ScrollTrigger);
+    // const horSection = gsap.utils.toArray(".work_site");
+
+    // gsap.to(horSection, {
+    //     xPercent: -120 * (horSection.length - 1),
+    //     ease: "none",
+    //     scrollTrigger: {
+    //         trigger: "#section3",
+    //         start: "top top",
+    //         end: "+=3000",
+    //         pin: true,
+    //         scrub: 1,
+    //         // markers: true,
+    //         invalidateOnRefresh: true,
+    //         anticipatePin: 1,
+    //     }
+    // });
 
     // section4
+    // const slider  = document.querySelector(".script_type");
+    // const image = document.querySelector(".imgFunc");
+    // const bounds = image.getBoundingClientRect();
+    
+    // slider.addEventListener("mousemove", (e) => {
+    //     const imageSrc = e.target.querySelector("img")?.getAttribute("data-src");
+    
+    //     if (imageSrc) {
+    //         image.src = imageSrc;
+    
+    //         const xMovement = Math.min(Math.max(parseInt(e.movementX), -20), 20);
+    //         const yMovement = Math.min(Math.max(parseInt(e.movementY), -20), 20);
+    
+    //         gsap.to(image, {
+    //             autoAlpha: 1,
+    //             x: e.clientX - bounds.left,
+    //             y: e.clientY - bounds.top - bounds.height / 2,
+    //             transformOrigin: "center",
+    //             rotation: xMovement,
+    //             skewX: xMovement,
+    //             skewY: yMovement
+    //         });
+    //     } else {
+    //         image.src = "";
+    
+    //         gsap.set(image, {
+    //             autoAlpha: 0
+    //         });
+    //     }
+    // });
+    
+
     let s0;
 
     gsap.set(".script_title.split.s0 .line", {
