@@ -165,16 +165,35 @@ export function section() {
     // section3
 
     // desc 숨긴거 오버시 보여주기
-    let desc = document.querySelectorAll(".work_site");
+    // let desc = document.querySelectorAll(".work_site");
 
-    desc.forEach(descitem => {
-        descitem.addEventListener("mouseover", function () {
-            this.querySelector(".work_info").classList.add("visible");
-        });
+    // desc.forEach(descitem => {
+    //     descitem.addEventListener("mouseover", function () {
+    //         this.querySelector(".work_info").classList.add("visible");
+    //     });
 
-        descitem.addEventListener("mouseout", function () {
-            this.querySelector(".work_info").classList.remove("visible");
-        });
+    //     descitem.addEventListener("mouseout", function () {
+    //         this.querySelector(".work_info").classList.remove("visible");
+    //     });
+    // });
+
+    // swiper
+
+    let swiper = new Swiper(".work_list", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
     });
 
     // 가로형 모드

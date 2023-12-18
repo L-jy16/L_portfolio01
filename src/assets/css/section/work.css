@@ -28,11 +28,11 @@
   width: 33.3333%;
   margin-left: 2vw;
   padding: 1vw;
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
 }
 
 .work_site:hover {
-  margin-top: -1vw;
+  /* margin-top: -1vw; */
 }
 
 
@@ -69,14 +69,6 @@
 }
 
 .work_site .work_info {
-  display: none;
-}
-
-.work_site:hover .work_info {
-  display: block;
-}
-
-.work_site .work_info.visible {
   padding: 3% 5% 3% 5%;
   height: auto;
 }
@@ -105,13 +97,13 @@
   background-color: var(--work_box6);
 }
 
-.work_site .work_info.visible span {
+.work_site .work_info span {
   display: inline-block;
   color: var(--black200);
   margin-bottom: 10px;
 }
 
-.work_site .work_info.visible h4 {
+.work_site .work_info h4 {
   /* font-size: 1.2rem; */
   font-size: 1.4rem;
   margin-bottom: 10px;
@@ -120,7 +112,7 @@
   word-break: keep-all;
 }
 
-.work_site .work_info.visible p {
+.work_site .work_info p {
   font-size: 1.2rem;
   font-family: var(--mainko-font);
   color: var(--white500);
@@ -149,8 +141,8 @@
 }
 
 @media (max-width: 1700px) {
-  .work_site .work_info.visible {
-    height: 250px;
+  .work_site .work_info {
+    height: 220px;
   }
 }
 
@@ -163,11 +155,11 @@
     width: 40%;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     font-size: 1.4rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 1.2rem;
   }
 }
@@ -181,17 +173,17 @@
     font-size: 1.5rem;
   }
 
-  .work_site .work_info.visible span {
+  .work_site .work_info span {
     font-size: 1rem;
     margin-bottom: 5px;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     margin-bottom: 5px;
     font-size: 1.2rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 1rem;
   }
 }
@@ -226,19 +218,19 @@
     width: 50%;
   }
 
-  .work_site .work_info.visible {
+  .work_site .work_info {
     height: 230px;
   }
 
-  .work_site .work_info.visible span {
+  .work_site .work_info span {
     font-size: 1rem;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     font-size: 1.3rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 1.1rem;
   }
 }
@@ -267,21 +259,21 @@
     width: 50%;
   }
 
-  .work_site .work_info.visible {
+  .work_site .work_info {
     height: 200px;
   }
 
-  .work_site .work_info.visible span {
+  .work_site .work_info span {
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     margin-bottom: 5px;
     font-size: 1.1rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 0.9rem;
   }
 
@@ -317,21 +309,21 @@
     width: 75%;
   }
 
-  .work_site .work_info.visible {
+  .work_site .work_info {
     height: 180px;
   }
 
-  .work_site .work_info.visible span {
+  .work_site .work_info span {
     font-size: 1rem;
     margin-bottom: 5px;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     margin-bottom: 5px;
     font-size: 1.2rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 1rem;
   }
 
@@ -366,21 +358,21 @@
     width: 75%;
   }
 
-  .work_site .work_info.visible {
+  .work_site .work_info {
     height: 180px;
   }
 
-  .work_site .work_info.visible span {
+  .work_site .work_info span {
     font-size: 0.9rem;
     margin-bottom: 5px;
   }
 
-  .work_site .work_info.visible h4 {
+  .work_site .work_info h4 {
     margin-bottom: 5px;
     font-size: 1rem;
   }
 
-  .work_site .work_info.visible p {
+  .work_site .work_info p {
     font-size: 0.9rem;
   }
 
