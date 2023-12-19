@@ -165,36 +165,61 @@ export function section() {
 
     // section3
 
-    // swiper
-
-    let swiper = new Swiper(".mySwiper", {
-        effect: "coverflow",
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        mousewheel: {
-            enabled: true,
-        },
-    });
-
-    // Swiper의 슬라이드 개수
-    const slideCount = swiper.slides.length;
-
-    // Swiper 슬라이드의 너비
-    const slideWidth = swiper.slides[0].offsetWidth;
-
+    // 07 : 텍스트 제자리 애니메이션
+    const ani = gsap.timeline();
+    ani
+        // .from("#section3 .site1", { autoAlpha: 1, duration: 0.5, y: 0 }, "+=3")
+        .to("#section3 .site1", { autoAlpha: 0, duration: 0.5, y: 0, scale: 0.8 })
+        .from("#section3 .site2", { autoAlpha: 0, duration: 0.5, y: 100 }, "-=0.5")
+        .to("#section3 .site2", { autoAlpha: 0, duration: 0.5, y: 0, scale: 0.8 })
+        .from("#section3 .site3", { autoAlpha: 0, duration: 0.5, y: 100 }, "-=0.5")
+        .to("#section3 .site3", { autoAlpha: 0, duration: 0.5, y: 0, scale: 0.8 })
+        .from("#section3 .site4", { autoAlpha: 0, duration: 0.5, y: 100 }, "-=0.5")
+        .to("#section3 .site4", { autoAlpha: 0, duration: 0.5, y: 0, scale: 0.8 })
+        .from("#section3 .site5", { autoAlpha: 0, duration: 0.5, y: 100 }, "-=0.5")
+        .to("#section3 .site5", { autoAlpha: 0, duration: 0.5, y: 0, scale: 0.8 })
+        .from("#section3 .site6", { autoAlpha: 0, duration: 0.5, y: 100 }, "-=0.5");
     ScrollTrigger.create({
+        animation: ani,
         trigger: "#section3",
         start: "top top",
-        end: `+=${(slideCount - 1) * slideWidth}`,
+        end: "+=6000",
+        scrub: true,
         pin: true,
-    })
+
+    });
+
+
+    // swiper
+
+    // let swiper = new Swiper(".mySwiper", {
+    //     effect: "coverflow",
+    //     centeredSlides: true,
+    //     slidesPerView: "auto",
+    //     coverflowEffect: {
+    //         rotate: 50,
+    //         stretch: 0,
+    //         depth: 100,
+    //         modifier: 1,
+    //         slideShadows: true,
+    //     },
+    //     mousewheel: {
+    //         enabled: true,
+    //     },
+    // });
+
+    // // Swiper의 슬라이드 개수
+    // const slideCount = swiper.slides.length;
+
+    // // Swiper 슬라이드의 너비
+    // const slideWidth = swiper.slides[0].offsetWidth;
+
+    // ScrollTrigger.create({
+    //     trigger: "#section3",
+    //     start: "top top",
+    //     end: `+=${(slideCount - 1) * slideWidth}`,
+    //     pin: true,
+    // })
 
 
     // // 가로형 모드
