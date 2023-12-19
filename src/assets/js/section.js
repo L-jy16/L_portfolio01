@@ -182,7 +182,7 @@ export function section() {
         },
     });
 
-      // Swiper의 슬라이드 개수
+    // Swiper의 슬라이드 개수
     const slideCount = swiper.slides.length;
 
     // Swiper 슬라이드의 너비
@@ -191,7 +191,7 @@ export function section() {
     ScrollTrigger.create({
         trigger: "#section3",
         start: "top top",
-        end: `+=${(slideCount - 4) * slideWidth}`,
+        end: `+=${(slideCount) * slideWidth}`,
         pin: true,
     })
 
@@ -216,65 +216,81 @@ export function section() {
     // });
 
     // section4
-    // const slider  = document.querySelector(".script_type");
-    // const image = document.querySelector(".imgFunc");
-    // const bounds = image.getBoundingClientRect();
-    
-    // slider.addEventListener("mousemove", (e) => {
-    //     const imageSrc = e.target.querySelector("img")?.getAttribute("data-src");
-    
-    //     if (imageSrc) {
-    //         image.src = imageSrc;
-    
-    //         const xMovement = Math.min(Math.max(parseInt(e.movementX), -20), 20);
-    //         const yMovement = Math.min(Math.max(parseInt(e.movementY), -20), 20);
-    
-    //         gsap.to(image, {
-    //             autoAlpha: 1,
-    //             x: e.clientX - bounds.left,
-    //             y: e.clientY - bounds.top - bounds.height / 2,
-    //             transformOrigin: "center",
-    //             rotation: xMovement,
-    //             skewX: xMovement,
-    //             skewY: yMovement
-    //         });
-    //     } else {
-    //         image.src = "";
-    
-    //         gsap.set(image, {
-    //             autoAlpha: 0
-    //         });
-    //     }
-    // });
-    
 
-    let s0;
+    //     let s0;
 
-    gsap.set(".script_title.split.s0 .line", {
-        opacity: 0,
+    //     gsap.set(".script_title.split.s0 .line", {
+    //         opacity: 0,
+    //     });
+    //     gsap.set(".box.s1, .box.s2, .box.s3, .box.s4, .box.s5", {
+    //         opacity: 0.6,
+    //         yPercent: 200
+    //     });
+
+    //     setTimeout(() => {
+    //         s0 = gsap.timeline({ paused: true });
+
+    //         s0.to(".script_title.split.s0 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.7, stagger: 0.0351, })
+    //         s0.to(".box.s1", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //         s0.to(".box.s2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //         s0.to(".box.s3", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //         s0.to(".box.s4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //         s0.to(".box.s5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
+    //     }, 1000)
+
+    //     ScrollTrigger.create({
+    //         trigger: "#section4",
+    //         start: "top 50%",
+    //         end: "bottom 20%",
+    //         onEnter: () => s0.play(),
+    //         onLeaveBack: () => s0.reverse(),
+    //         markers: false
+    //     })
+
+    const ScriptWrap = document.querySelector(".script_type");
+    const Image = document.querySelector(".script_img");
+    const ScriptImg = Image.getBoundingClientRect();
+
+    gsap.set(Image, {
+        autoAlpha: 0,
+        width: 0,
+        height: 0
     });
-    gsap.set(".box.s1, .box.s2, .box.s3, .box.s4, .box.s5", {
-        opacity: 0.6,
-        yPercent: 200
-    });
 
-    setTimeout(() => {
-        s0 = gsap.timeline({ paused: true });
+    ScriptWrap.addEventListener("mouseover", (e) => {
+        const imageSrc = e.target.querySelector("img")?.getAttribute("data-src");
 
-        s0.to(".script_title.split.s0 .line", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.7, stagger: 0.0351, })
-        s0.to(".box.s1", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        s0.to(".box.s2", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        s0.to(".box.s3", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        s0.to(".box.s4", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-        s0.to(".box.s5", { opacity: 1, yPercent: 0, ease: "power4.out", duration: 0.8, stagger: 0.0351, }, "-=0.5")
-    }, 1000)
+        if (imageSrc) {
+            Image.src = imageSrc;
 
-    ScrollTrigger.create({
-        trigger: "#section4",
-        start: "top 50%",
-        end: "bottom 20%",
-        onEnter: () => s0.play(),
-        onLeaveBack: () => s0.reverse(),
-        markers: false
+            const xMovement = Math.min(Math.max(parseInt(e.movementX), -20), 20);
+            const yMovement = Math.min(Math.max(parseInt(e.movementY), -20), 20);
+
+            gsap.to(Image, {
+                autoAlpha: 1,
+                width: 300,
+                height: 250,
+                x: e.clientX - ScriptImg.left,
+                y: e.clientY - ScriptImg.top - ScriptImg.height / 2,
+                transformOrigin: "center",
+                rotation: xMovement,
+                skewX: xMovement,
+                skewY: yMovement,
+                ease: "Power2.easeOut",
+            });
+        }
     })
+
+    ScriptWrap.addEventListener("mouseout", () => {
+        Image.src = "";
+        gsap.set(Image, {
+            autoAlpha: 0,
+            width: 0,
+            height: 0,
+            ease: "Power2.easeOut"
+        });
+    });
+
+
+
 }
