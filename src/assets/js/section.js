@@ -100,7 +100,8 @@ export function section() {
         end: "+=100%",
         onEnter: () => i1.play(),
         onLeaveBack: () => i1.reverse(),
-        markers: false
+        markers: false,
+        ease: "Power2.easeOut",
     })
 
     // let a1;
@@ -191,7 +192,7 @@ export function section() {
     ScrollTrigger.create({
         trigger: "#section3",
         start: "top top",
-        end: `+=${(slideCount) * slideWidth}`,
+        end: `+=${(slideCount - 1) * slideWidth}`,
         pin: true,
     })
 
@@ -253,8 +254,9 @@ export function section() {
 
     gsap.set(Image, {
         autoAlpha: 0,
-        width: 0,
-        height: 0
+        // width: 0,
+        // height: 0,
+        // ease: "Power2.easeOut",
     });
 
     ScriptWrap.addEventListener("mouseover", (e) => {
@@ -263,34 +265,31 @@ export function section() {
         if (imageSrc) {
             Image.src = imageSrc;
 
-            const xMovement = Math.min(Math.max(parseInt(e.movementX), -20), 20);
-            const yMovement = Math.min(Math.max(parseInt(e.movementY), -20), 20);
+            const xMovement = Math.min(Math.max(parseInt(e.movementX), -30), 30);
+            const yMovement = Math.min(Math.max(parseInt(e.movementY), -30), 30);
 
             gsap.to(Image, {
                 autoAlpha: 1,
-                width: 300,
-                height: 250,
+                width: 250,
+                height: 200,
                 x: e.clientX - ScriptImg.left,
                 y: e.clientY - ScriptImg.top - ScriptImg.height / 2,
                 transformOrigin: "center",
                 rotation: xMovement,
                 skewX: xMovement,
                 skewY: yMovement,
-                ease: "Power2.easeOut",
+                // ease: "Power2.easeOut",
             });
         }
-    })
-
+    });
     ScriptWrap.addEventListener("mouseout", () => {
-        Image.src = "";
-        gsap.set(Image, {
+        gsap.to(Image, {
             autoAlpha: 0,
             width: 0,
             height: 0,
-            ease: "Power2.easeOut"
+            // ease: "Power2.easeOut",
         });
     });
-
 
 
 }
