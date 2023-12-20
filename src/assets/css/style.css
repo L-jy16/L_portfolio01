@@ -10,10 +10,6 @@
 @import "./section/header.css";
 @import "./section/mian.css";
 @import "./section/info.css";
-/* @import "./section/work.css"; */
 @import "./section/work2.css";
-/* @import "./section/script.css"; */
-@import "./section/script2.css";
-/* @import "./section/footer.css"; */
-@import "./section/footer2.css";
-@import "./section/popup.css";
+@import "./section/script.css";
+@import "./section/footer.css";
